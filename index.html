@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Antecedentes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo sialnor (png).png" alt="logo sialnor">
+        <h1>Antecedentes de salud para programas de prevención</h1>
+    </header>
+
+    <main>
+        <form action="index.php" method="post"> 
+
+           <section class="seccion1">
+             <label>Apellido y Nombre:
+                 <input type="text" name="apellido y nombre">
+             </label>
+             <label>D.N.I:
+                 <input type="number" name="dni">
+             </label>
+             <label>Fecha de Nacimiento:
+                 <input type="date" name="nacimiento" autocomplete="on">
+             </label>
+
+             <p class="marcar">Marcar por SI o NO todas las preguntas que se formulan a continuación en las secciones A y B</p>
+            </section>
+            
+            <section>
+                <h2>Sección A</h2>
+                <ol>
+                   <li>
+                    <label>Peso:
+                        <input type="number" name="peso" max="3">
+                    </label>
+                    <label>Altura:
+                        <input type="text" name="altura">
+                    </label>
+                    <label>Perímetro de la cintura en cm:
+                        <input type="number" name="perimetro cintura">
+                    </label>
+                    <br><br>
+                    <label>Cambios en los últimos meses:
+                        <input type="radio" name="cambios ultimamente" value="si">SI
+                        <input type="radio" name="cambios ultimamente" value="no">NO
+                    </label>
+                    <br>
+                    <label>(Especificar aumento o pérdida)
+                        <input type="text" name="espeficicar cambios">
+                    </label> 
+                   </li> 
+                   <br>
+                   <li>
+                    <label>¿Ha fumado o fuma?
+                        <input type="radio" name="fuma" value="si">SI
+                        <input type="radio" name="fuma" value="no">NO
+                    </label>
+                    <br>
+                    <label>¿Durante cuánto tiempo?
+                        <input type="radio" name="hace cuanto fuma" value="5 años">Más de 5 años
+                        <input type="radio" name="hace cuanto fuma" value="10 años">Más de 10 años
+                    </label>
+                    <label class="margin-input">¿Cuántos cigarrillos por día?
+                        <input type="radio" name="cuantos cigarrilos" value="5">Más de 5
+                        <input type="radio" name="cuantos cigarrilos" value="10">Más de 10
+                        <input type="radio" name="cuantos cigarrilos" value="20">Más de 20
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Ha consumido o consume bebidas alcohólicas?
+                        <input type="radio" name="alcohol" value="si">SI
+                        <input type="radio" name="alcohol" value="no">NO
+                    </label>
+                    <br>
+                    <label>¿Durante cuánto tiempo?
+                        <input type="radio" name="tiempo alcohol" value="5 años">Más de 5 años
+                        <input type="radio" name="tiempo alcohol" value="10 años">Más de 10 años
+                    </label>
+                    <label class="margin-input">¿Qué cantidad por día?
+                        <input type="radio" name="cantidad alcohol" value="un vaso">Más de 1 vaso
+                        <input type="radio" name="cantidad alcohol" value="medio litro">Más de 1/2 litro
+                        <input type="radio" name="cantidad alcohol" value="un litro">Más de 1 litro
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Utiliza medicamentos o sustancias para dormir?
+                        <input type="radio" name="med para dormir" value="si">SI
+                        <input type="radio" name="med para dormir" value="no">NO
+                    </label>
+                    <br>
+                    <label>¿Cómo se llama?
+                        <input type="text" name="nombre med dormir">
+                    </label>
+                    <label>Cantidad
+                        <input type="text" name="cantidad med dormir">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>Medicación que recibe o ha recibido en el último año (espeficiar o nombrar los mismo)
+                        <input type="text" name="nombre med dormir">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Menstruación regular?
+                        <input type="radio" name="menstruacion regular" value="si">SI
+                        <input type="radio" name="menstruacion regular" value="no">NO
+                    </label>
+                    <label class="margin-input">Fecha última menstruación:
+                        <input type="date" name="ultima menstruacion" autocomplete="on">
+                    </label>
+                    <br>
+                    <label>¿Trastornos de ovarios o de útero?
+                        <input type="radio" name="ovarios" value="si">SI
+                        <input type="radio" name="ovarios" value="no">NO
+                    </label>
+                    <br>
+                    <label>¿Enfermedad de las mamas?
+                        <input type="radio" name="enfermedad mamas" value="si">SI
+                        <input type="radio" name="enfermedad mamas" value="no">NO
+                    </label> 
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Embarazo actual?
+                        <input type="radio" name="embarazo" value="si">SI
+                        <input type="radio" name="embarazo" value="no">NO
+                    </label>
+                    <label class="margin-input">En caso afirmativo citar fecha probable de parto
+                        <input type="date" name="fecha embarazo" autocomplete="on">
+                    </label>
+                    <br>
+                    <label>¿Cuántos embarazazros ha tenido?
+                        <input type="numer" name="cant embarazo">
+                    </label>
+                    
+                    </label>
+                    <label>¿Cuántos de los embarazos terminaron en parto y/o cesarea?
+                        <input type="numer" name="parto o cesarea">
+                    </label>
+                    <br>
+                    <label>En caso afirmativo, si tuvo algún problema durante los embarazos y partos y/o cesareas; citarlos brevemente y aclarar si ha quedado con alguna medicación y/o tratamientos
+                        <input type="text" name="problema con embarazo">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Problema de próstata?
+                        <input type="radio" name="prostata" value="si">SI
+                        <input type="radio" name="prostata" value="no">NO
+                    </label>
+                    <br>
+                    <label>¿Trastorno del aparato reproductor, esterilidad?
+                        <input type="radio" name="esterilidad" value="si">SI
+                        <input type="radio" name="esterilidad" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Presenta o ha presentado enfermeades de los ojos, oído o garganta?
+                        <input type="radio" name="enfermedad ojos" value="si">SI
+                        <input type="radio" name="enfermedad ojos" value="no">NO
+                    </label>
+                    <br>
+                    <label>En caso afirmativo especificar qué y cuál fue el tratamiento:
+                        <input type="type" name="tratamientos enf ojos">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Enfermedad mental, transtornos psicológicos y/o tratamientos previos incluyendo uso actual de psicofármacos?
+                        <input type="radio" name="esterilidad" value="si">SI
+                        <input type="radio" name="esterilidad" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Bocio o enfermedades de la tiroides?
+                        <input type="radio" name="tiroides" value="si">SI
+                        <input type="radio" name="tiroides" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Problemas del corazón, tensión arterial anormal (hipertensión o hipotensión), dolores de pecho?
+                        <input type="radio" name="hipertension" value="si">SI
+                        <input type="radio" name="hipertension" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Enfermedad de Chagas?
+                        <input type="radio" name="chagas" value="si">SI
+                        <input type="radio" name="chagas" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Artritis, reumatismo, fiebre reumática, problemas de columna, gota?
+                        <input type="radio" name="artritis" value="si">SI
+                        <input type="radio" name="artritis" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Anemia u otra enfermedad de la sangre?
+                        <input type="radio" name="anemmia" value="si">SI
+                        <input type="radio" name="anemmia" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Has sido excluido de donar sangre?
+                        <input type="radio" name="donar sangre" value="si">SI
+                        <input type="radio" name="donar sangre" value="no">NO
+                    </label>
+                    <label class="margin-input">¿Por qué?
+                        <input type="text" name="no dono sangre">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Problemas estomacales o intestinales, diarrea, úlceras, hemorroides?
+                        <input type="radio" name="problemas estomacales" value="si">SI
+                        <input type="radio" name="problemas estomacales" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Problemas de hígado o vesícula biliar?
+                        <input type="radio" name="higado" value="si">SI
+                        <input type="radio" name="higado" value="no">NO
+                    </label>
+                    <label class="margin-input">¿Está operado/a de vesícula?
+                        <input type="radio" name="operacion vesicula" value="si">SI
+                        <input type="radio" name="operacion vesicula" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Hernias inguinales, umbilicales?
+                        <input type="radio" name="hernias inguinales" value="si">SI
+                        <input type="radio" name="hernias inguinales" value="no">NO
+                    </label>
+                    <label class="margin-input">¿Está operado?
+                        <input type="radio" name="op hernia" value="si">SI
+                        <input type="radio" name="op hernia" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Problemas renales, vías urinarias, vejiga, cálculos infecciones frecuentes?
+                        <input type="radio" name="problemas renales" value="si">SI
+                        <input type="radio" name="problemas renales" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Cancer o tumores?
+                        <input type="radio" name="cancer" value="si">SI
+                        <input type="radio" name="cancer" value="no">NO
+                    </label>
+                    <label class="margin-input">¿Dónde esta localizado?
+                        <input type="text" name="localizacion tumor">
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Sindrome de Inmunodeficiencia Adquirida (SIDA), seropositividad para el virus (test HIV +)?
+                        <input type="radio" name="sida" value="si">SI
+                        <input type="radio" name="sida" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Tiene problemas de coresterol o triglicéridos altos?
+                        <input type="radio" name="colesterol" value="si">SI
+                        <input type="radio" name="colesterol" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Diabetes o alguna enfermedad metabólica?
+                        <input type="radio" name="diabetes" value="si">SI
+                        <input type="radio" name="diabetes" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Tuberculosis, asma o bronquitis crónica u otras enfermedades pulmonares?
+                        <input type="radio" name="asma" value="si">SI
+                        <input type="radio" name="asma" value="no">NO
+                    </label>
+                    </li>
+                    <br>
+                    <li>
+                    <label>¿Defectos físicos, cojera, amputación, deformidades?
+                        <input type="radio" name="defectos fisicos" value="si">SI
+                        <input type="radio" name="defectos fisicos" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Enfermedades transmitidas por vía sexual?
+                        <input type="radio" name="enfermedades sexuales" value="si">SI
+                        <input type="radio" name="enfermedades sexuales" value="no">NO
+                    </label>
+                   </li>
+                   <br>
+                   <li>
+                    <label>¿Otras enfermedaddes no mencionadas en esta declaración? Especificar
+                        <input type="text" name="otras enfermedades">
+                    </label>
+                   </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Seccion B</h2>
+                <ul>
+                  <li>
+                    <label>Indicar si además de las enfermedades y/o cuadros enumerados en la sección A, durante los últimos 5 (cinco) años se ha efectuado algun exámen físico 
+                     <input type="radio" name="examen fisico" value="si">SI
+                     <input type="radio" name="examen fisico" value="no">NO
+                    </label>
+                 </li>
+                 <br>
+                 <li>
+                    <label>¿Ha visitado algún medico o establecimiento de salud por alguna consulta y/o tratamiento médico o quirúrgico o exámen respecto a alguna enfermedad que no está indicada en la sección A?
+                     <input type="radio" name="consulta medica otra enf" value="si">SI
+                     <input type="radio" name="consulta medica otra enf" value="no">NO
+                    </label>
+                 </li>
+                 <br>
+                 <li>
+                   <label>¿Ha tenido algún problema de saludo o algún síntoma que no esté indicado en ninguno de los puntos precedentes por el cuál haya o no efectuado alguna consulta?<br>
+                     <input type="radio" name="otro problema no indicado" value="si">SI
+                     <input type="radio" name="otro problema no indicado" value="no">NO
+                   </label>
+                 </li>
+               </ul>
+            </section>
+
+            <section>
+                <h2>Sección C</h2>
+                <p>En caso de haber respondido afirmativamente algún punto de la secciones A o B, proporcionar toda la información solicitada en esta sección, Historia Clínica (diagnóstico, tratamiento, fecha, nombre y apellido del médico tratante, institución donde se atendió), y demás documentación (agregar otra hoja a la presente si fuera necesario)</p>
+                <input type="file" name="archivos historia clinica" multiple>
+            </section>
+
+            <section>
+                <h3>Importante:</h3>
+                <p class="importante">Sirvase verificar si toda la información solicitada en el presente formulario ha sido proporcionada. Toda solicitud que estuviera incompleta será devuelta al solicitante a los efectos de completar los datos necesarios.</p>
+            </section>
+
+            <br><br><br>
+
+            <input type="submit" value="Enviar formulario" class="submit"> 
+
+        </form>
+
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
+
+
+
